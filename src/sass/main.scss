@@ -1,5 +1,6 @@
 // UTILS
 @import "reset";
+@import "mixins";
 
 // LIBS
 @import "libs/bootstrap-grid";
@@ -9,5 +10,6 @@
 @import "base";
 
 // COMPONENTS
+@import "buttons";
 @import "header";
 @import "footer";
