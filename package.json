@@ -5,8 +5,8 @@
   "main": "index.js",
   "eslintConfig": ".eslintrc.js",
   "scripts": {
-    "start": "NODE_ENV=development gulp",
-    "build": "NODE_ENV=production gulp"
+    "start": "SET NODE_ENV=development&&gulp",
+    "build": "SET NODE_ENV=production&&gulp"
   },
   "author": "Nazar Kubatyi",
   "license": "ISC",
