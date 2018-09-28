@@ -24,4 +24,4 @@ class Application {
     }
 };
 
-new Application();
+const App = new Application();

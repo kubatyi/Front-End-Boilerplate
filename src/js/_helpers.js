@@ -8,7 +8,7 @@ export const $footer = $('footer');
 export const $scrolledElements = $('html, body');
 export const winWidth = $window.width();
 export const currentPage = $body.find('main').data('page');
-export const toggleClass = (clickHandler, element, className = css.active) => {
+export const toggleClass = (clickHandler, element, className = 'active') => {
     clickHandler.on('click tap', () => element.toggleClass(className));
 };
 export const isScrolledIntoView = ($element, offsetTop = 0, fullyInView = false) => {
