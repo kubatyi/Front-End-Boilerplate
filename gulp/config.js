@@ -1,13 +1,6 @@
 const util  = require('gulp-util');
 
 let config = {
-    overview: {
-        projectTitle: 'FinConsul'
-    },
-    setEnvironment: function (env) {
-        if (typeof env !== 'string') return;
-        process.env.NODE_ENV = env;
-    },
     logEnvironment: function() {
         util.log(
             'Environment:',

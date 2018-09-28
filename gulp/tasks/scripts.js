@@ -8,33 +8,9 @@ const webpackStream = require('webpack-stream');
 const plumber       = require('gulp-plumber');
 const notify        = require('gulp-notify');
 
-const webpackConfig = {
-    output: {
-        filename: 'bundle.js',
-    },
-    module: {
-        rules: [
-            {
-                test: /\.(js)$/,
-                exclude: /(node_modules)/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['env']
-                }
-            }
-        ]
-    },
-    plugins: [
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "window.jQuery": "jquery",
-        })
-    ]
-};
-gulp.task('scripts', () => {
-    webpackConfig.mode = process.env.NODE_ENV;
+const webpackConfig = require('../../webpack.config');
 
+gulp.task('scripts', () => {
     return gulp
         .src(config.paths.src.js)
         .pipe(plumber({
