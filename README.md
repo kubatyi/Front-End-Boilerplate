@@ -1,6 +1,6 @@
 # Front-End Development Starter Kit
 
-###Install dependencies:
+### Install dependencies:
 
 ```bash
 npm i
@@ -11,11 +11,11 @@ npm i
 ------------
 
 
-#####Development
+##### Development
 ```bash
 npm start
 ```
-#####Build project
+##### Build project
 ```bash
 npm run build
 ```
